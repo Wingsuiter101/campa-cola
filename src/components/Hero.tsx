@@ -3,13 +3,14 @@
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import Image from "next/image";
+import { assetPath } from "@/lib/basePath";
 
 export function Hero() {
   return (
     <section className="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-black px-6">
       {/* Background image */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-40">
-        <Image src="/1.png" alt="Stadium Atmosphere" fill className="object-cover" priority />
+        <Image src={assetPath("/1.png")} alt="Stadium Atmosphere" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-black/60 mix-blend-multiply" />
       </div>
 
@@ -37,7 +38,7 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="mb-6 flex items-center justify-center gap-6"
         >
-          <Image src="/saff-png.png" alt="SAFF Logo" width={220} height={220} className="object-contain drop-shadow-2xl" />
+          <Image src={assetPath("/saff-png.png")} alt="SAFF Logo" width={220} height={220} className="object-contain drop-shadow-2xl" />
         </motion.div>
 
         <motion.h1
@@ -57,9 +58,9 @@ export function Hero() {
           className="text-xl md:text-2xl text-white/60 font-light mb-12 max-w-2xl flex flex-col sm:flex-row items-center justify-center gap-3"
         >
           <span>Presented exclusively to</span>
-          <Image src="/campa-cola-logo-hd.webp" alt="Campa Cola" width={120} height={48} className="object-contain" />
+          <Image src={assetPath("/campa-cola-logo-hd.webp")} alt="Campa Cola" width={120} height={48} className="object-contain" />
           <span>by</span>
-          <Image src="/dgo-logo-new.png" alt="DGO" width={80} height={32} className="object-contain" />
+          <Image src={assetPath("/dgo-logo-new.png")} alt="DGO" width={80} height={32} className="object-contain" />
         </motion.div>
 
         <motion.div

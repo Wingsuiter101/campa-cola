@@ -8,6 +8,7 @@ import { Tournament } from "@/components/Tournament";
 import { Schedule } from "@/components/Schedule";
 import { Viewership } from "@/components/Viewership";
 import Image from "next/image";
+import { assetPath } from "@/lib/basePath";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
       
       <footer className="bg-black border-t border-white/10 py-12 flex flex-col items-center text-center">
         <div className="mb-6 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-          <Image src="/dgo-logo-new.png" alt="DGO Logo" width={80} height={32} className="object-contain" />
+          <Image src={assetPath("/dgo-logo-new.png")} alt="DGO Logo" width={80} height={32} className="object-contain" />
         </div>
         <p className="text-white/40 text-sm mb-2">
           This document is strictly confidential and intended solely for the addressee.

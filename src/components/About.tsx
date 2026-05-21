@@ -3,6 +3,7 @@
 import { Section } from "./ui/Section";
 import { Play, Tv, Smartphone } from "lucide-react";
 import Image from "next/image";
+import { assetPath } from "@/lib/basePath";
 
 export function About() {
   return (
@@ -15,7 +16,7 @@ export function About() {
           </div>
           
           <div className="mb-8">
-            <Image src="/dgo-logo-new.png" alt="DGO Logo" width={120} height={48} className="object-contain" />
+            <Image src={assetPath("/dgo-logo-new.png")} alt="DGO Logo" width={120} height={48} className="object-contain" />
           </div>
 
           <h3 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">

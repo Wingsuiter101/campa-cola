@@ -4,6 +4,7 @@ import { Section } from "./ui/Section";
 import { motion } from "framer-motion";
 import { Calendar, Clock, Flame, TrendingUp, Zap } from "lucide-react";
 import Image from "next/image";
+import { assetPath } from "@/lib/basePath";
 
 const nepalMatches = [
   {
@@ -44,7 +45,7 @@ export function Schedule() {
     <Section className="bg-zinc-950 border-t border-white/5 py-32 relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 opacity-15 pointer-events-none">
-        <Image src="/2.jpeg" alt="High Speed Action" fill className="object-cover" />
+        <Image src={assetPath("/2.jpeg")} alt="High Speed Action" fill className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black/60 to-black" />
         <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black" />
       </div>
@@ -152,7 +153,7 @@ export function Schedule() {
             >
               {/* Background Image */}
               <div className="absolute inset-0 opacity-30 mix-blend-screen">
-                <Image src="/2.jpeg" alt="High Speed Action" fill className="object-cover" />
+                <Image src={assetPath("/2.jpeg")} alt="High Speed Action" fill className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-b from-black via-black/50 to-black" />
               </div>
 
