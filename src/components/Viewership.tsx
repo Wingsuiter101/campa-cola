@@ -4,10 +4,10 @@ import { Section } from "./ui/Section";
 import { motion } from "framer-motion";
 
 const metrics = [
-  { value: "15M+", label: "Projected Digital Impressions", context: "Across DGO & Social Channels" },
-  { value: "3.2M+", label: "Peak Match Views", context: "Based on historical SAFF viewership" },
-  { value: "250K+", label: "DGO Monthly Active Users", context: "Verified platform metric" },
-  { value: "85%", label: "Mobile Viewership Share", context: "Highly engaged digital-first audience" },
+  { value: "250K–400K", label: "Projected Nepal Digital Reach", context: "Live broadcast, clips, reminders, and matchday posts" },
+  { value: "35K–75K", label: "Projected Peak Live Audience", context: "Nepal fixtures, with upside in knockouts" },
+  { value: "2M–3.5M", label: "Projected Sponsor Impressions", context: "Logo, L-band, Aston, TVC, and app placements" },
+  { value: "1M+", label: "2024 Market Demand Signal", context: "Public benchmark for Nepal's SAFF final interest" },
 ];
 
 export function Viewership() {
@@ -18,9 +18,9 @@ export function Viewership() {
           <span className="text-dgo font-mono text-sm">09</span>
           <h2 className="text-sm uppercase tracking-widest text-white/50">Viewership & Reach</h2>
         </div>
-        <h3 className="text-4xl md:text-5xl font-bold">Digital Audience Data</h3>
+        <h3 className="text-4xl md:text-5xl font-bold">2026 Nepal Broadcast Forecast</h3>
         <p className="mt-6 text-white/60 max-w-3xl text-lg font-light">
-          The SAFF Women's Championship commands massive digital attention. With South Asian football viewership shifting rapidly to digital platforms, live coverage reaches millions across Nepal, India, Bangladesh, and the diaspora.
+          A Nepal-only broadcast gives Campa Cola a focused ownership moment with the country's most passionate football audience. Nepal's group fixtures, knockout potential, and live sponsor inventory create repeated high-attention touchpoints across the tournament window.
         </p>
       </div>
 
@@ -45,9 +45,9 @@ export function Viewership() {
 
       <div className="mt-16 p-[1px] rounded-3xl bg-gradient-dgo">
         <div className="bg-black rounded-3xl p-8 md:p-12 h-full">
-          <h4 className="text-2xl font-bold text-white mb-4">DGO Live Coverage · 2026 Championship</h4>
+          <h4 className="text-2xl font-bold text-white mb-4">Forecast Model · Nepal-Only Digital Broadcast</h4>
           <p className="text-white/70 text-lg font-light max-w-4xl">
-            DGO will deliver full live coverage of the 2026 SAFF Women's Championship. As the exclusive digital broadcaster, every live match guarantees premium, uninterrupted brand visibility for the Title Sponsor, reaching DGO's verified 250,000+ monthly active users directly on their screens through high-impact inventory like L-bands, Aston graphics, and split-screen TVCs.
+            Campa Cola receives visibility across every live match touchpoint: stream entry, in-app placements, match reminders, highlight cuts, and social distribution. The biggest sponsorship upside comes from Nepal's group-stage matches and the prospect of a Nepal vs India semi-final or final.
           </p>
         </div>
       </div>

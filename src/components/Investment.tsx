@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { assetPath } from "@/lib/basePath";
 
 export function Investment() {
   return (
@@ -10,7 +9,7 @@ export function Investment() {
 
       {/* Full-bleed football background */}
       <div className="absolute inset-0">
-        <Image src={assetPath("/1.png")} alt="Stadium" fill className="object-cover opacity-20" priority />
+        <Image src="/1.png" alt="Stadium" fill className="object-cover opacity-20" priority />
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black" />
       </div>
@@ -46,7 +45,7 @@ export function Investment() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="mb-10"
           >
-            <Image src={assetPath("/campa-cola-logo-hd.webp")} alt="Campa Cola" width={200} height={80} className="object-contain" />
+            <Image src="/campa-cola-logo-hd.webp" alt="Campa Cola" width={200} height={80} className="object-contain" />
           </motion.div>
 
           {/* Main headline */}
@@ -137,7 +136,7 @@ export function Investment() {
               transition={{ duration: 0.6, delay: 0.8 }}
               className="flex justify-center lg:justify-end"
             >
-              <Image src={assetPath("/dgo-logo-new.png")} alt="DGO" width={100} height={40} className="object-contain opacity-60" />
+              <Image src="/dgo-logo-new.png" alt="DGO" width={100} height={40} className="object-contain opacity-60" />
             </motion.div>
           </motion.div>
         </div>

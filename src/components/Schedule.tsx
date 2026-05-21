@@ -4,7 +4,6 @@ import { Section } from "./ui/Section";
 import { motion } from "framer-motion";
 import { Calendar, Clock, Flame, TrendingUp, Zap } from "lucide-react";
 import Image from "next/image";
-import { assetPath } from "@/lib/basePath";
 
 const nepalMatches = [
   {
@@ -45,7 +44,7 @@ export function Schedule() {
     <Section className="bg-zinc-950 border-t border-white/5 py-32 relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 opacity-15 pointer-events-none">
-        <Image src={assetPath("/2.jpeg")} alt="High Speed Action" fill className="object-cover" />
+        <Image src="/2.jpeg" alt="High Speed Action" fill className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black/60 to-black" />
         <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black" />
       </div>
@@ -153,7 +152,7 @@ export function Schedule() {
             >
               {/* Background Image */}
               <div className="absolute inset-0 opacity-30 mix-blend-screen">
-                <Image src={assetPath("/2.jpeg")} alt="High Speed Action" fill className="object-cover" />
+                <Image src="/2.jpeg" alt="High Speed Action" fill className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-b from-black via-black/50 to-black" />
               </div>
 
@@ -177,7 +176,7 @@ export function Schedule() {
                   <div>
                     <h5 className="text-white font-bold mb-2">The "Nepal Multiplier"</h5>
                     <p className="text-white/60 text-sm font-light leading-relaxed">
-                      Matches featuring the Nepali national team historically draw <span className="text-white font-medium">3x to 4x the concurrent viewership</span> of neutral games on DGO. The patriotic fervor translates directly to brand attention.
+                      Matches featuring the Nepali national team are expected to out-index neutral fixtures, especially if the bracket creates a Nepal vs India semi-final or final. The patriotic intensity translates directly to brand attention.
                     </p>
                   </div>
                   

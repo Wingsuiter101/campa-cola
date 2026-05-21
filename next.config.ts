@@ -1,16 +1,13 @@
 import type { NextConfig } from "next";
 
-const isGithubPages = process.env.GITHUB_PAGES === "true";
-const basePath = isGithubPages ? "/campa-cola" : "";
+const isGitHubPages = process.env.GITHUB_PAGES === "true";
+const repoName = "campa-cola";
 
 const nextConfig: NextConfig = {
-  output: isGithubPages ? "export" : undefined,
-  basePath,
-  assetPrefix: isGithubPages ? `${basePath}/` : undefined,
+  output: isGitHubPages ? "export" : undefined,
+  basePath: isGitHubPages ? `/${repoName}` : undefined,
+  assetPrefix: isGitHubPages ? `/${repoName}/` : undefined,
   trailingSlash: true,
-  env: {
-    NEXT_PUBLIC_BASE_PATH: basePath,
-  },
   images: {
     unoptimized: true,
   },

@@ -3,7 +3,6 @@
 import { Section } from "./ui/Section";
 import { Calendar, MapPin, Trophy, Users } from "lucide-react";
 import Image from "next/image";
-import { assetPath } from "@/lib/basePath";
 
 const facts = [
   { icon: Trophy, label: "Edition", value: "8th SAFF Women's Championship" },
@@ -17,7 +16,7 @@ export function Tournament() {
     <Section className="bg-zinc-950 border-t border-white/5 relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 opacity-20 pointer-events-none">
-        <Image src={assetPath("/3.jpg")} alt="Player Boots" fill className="object-cover" />
+        <Image src="/3.jpg" alt="Player Boots" fill className="object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black" />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black" />
       </div>
@@ -31,7 +30,7 @@ export function Tournament() {
           </div>
           
           <div className="mb-8">
-            <Image src={assetPath("/saff-png.png")} alt="SAFF Logo" width={160} height={160} className="object-contain" />
+            <Image src="/saff-png.png" alt="SAFF Logo" width={160} height={160} className="object-contain" />
           </div>
 
           <h3 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
