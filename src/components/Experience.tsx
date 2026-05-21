@@ -18,10 +18,10 @@ const experiences = [
     desc: "The digital home for Nepal's premier franchise T20 cricket tournament, delivering massive concurrent viewership."
   },
   {
-    title: "Prime Minister Cup",
+    title: "PM Cup NVA",
     role: "Official Broadcaster",
     icon: Medal,
-    desc: "Comprehensive live coverage of Nepal's most prestigious domestic cricket tournament."
+    desc: "Comprehensive live coverage of Nepal's premier NVA volleyball tournament."
   },
   {
     title: "CAVA Volleyball",
